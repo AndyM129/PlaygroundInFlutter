@@ -8,9 +8,9 @@ class AppTextStyle extends TextStyle {
     fontSize: 9.0,
   );
   static final commonTextStyle = baseTextStyle.copyWith(
-      color: const Color(0xffb6b2df),
+    color: const Color(0xffb6b2df),
     fontSize: 14.0,
-      fontWeight: FontWeight.w400
+    fontWeight: FontWeight.w400
   );
   static final titleTextStyle = baseTextStyle.copyWith(
     color: Colors.white,

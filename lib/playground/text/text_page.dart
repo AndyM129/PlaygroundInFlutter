@@ -40,14 +40,15 @@ class TextPage extends StatelessWidget {
                 maxLines: 4,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 18.0,
-                    height:
-                        1.2, // 该属性用于指定行高，但它并不是一个绝对值，而是一个因子，具体的行高等于fontSize*height。
-                    fontFamily: "Courier",
-                    background: new Paint()..color = Colors.yellow,
-                    decoration: TextDecoration.underline,
-                    decorationStyle: TextDecorationStyle.dashed),
+                  color: Colors.blue,
+                  fontSize: 18.0,
+                  height:
+                      1.2, // 该属性用于指定行高，但它并不是一个绝对值，而是一个因子，具体的行高等于fontSize*height。
+                  fontFamily: "Courier",
+                  background: new Paint()..color = Colors.yellow,
+                  decoration: TextDecoration.underline,
+                  decorationStyle: TextDecorationStyle.dashed,
+                ),
               ),
               Divider(color: Colors.black),
               Divider(color: Colors.black),
@@ -90,7 +91,7 @@ class TextPage extends StatelessWidget {
               ),
               Divider(color: Colors.black),
               Text(
-                '使用字体, '*10,
+                '使用字体, ' * 10,
                 style: TextStyle(fontFamily: 'Poppins'),
               ),
             ],

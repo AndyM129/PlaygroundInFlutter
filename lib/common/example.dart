@@ -80,21 +80,15 @@ class ExampleHeader extends Container {
 
 // class _WidgetExamplePageState extends State<WidgetExamplePage> {
 //   @override
-//   void initState() {}
-
-//   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-//       appBar: AppBar(title: Text(widget.title ?? '页面标题')),
-//       body: SingleChildScrollView(
-//         padding: EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 44.0),
-//         child: Center(
+//       appBar: AppBar(title: Text(widget.title ?? appBarDefaultTitle())),
+//       body: Scrollbar(
+//         child: SingleChildScrollView(
+//           padding: EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 44.0),
 //           child: Column(
 //             children: <Widget>[
-//               Text("组件名称", style: AppTextStyle.titleTextStyle1),
-//               Text("组件介绍", style: AppTextStyle.tipsTextStyle),
-//               Divider(color: Colors.black),
-//               Padding(padding: EdgeInsets.only(top: 20.0)),
+//               exampleHeader(),
 //               example(),
 //             ],
 //           ),
@@ -104,6 +98,20 @@ class ExampleHeader extends Container {
 //   }
 
 //   ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 	final String chapterTitle = "Widget";
+//   final String widgetTitle = "WidgetExample";
+
+// 	String appBarDefaultTitle() {
+// 		return "${chapterTitle??""}${chapterTitle==null?"":" - "}${widgetTitle??""}";
+// 	}
+
+//   Widget exampleHeader() {
+//     return ExampleHeader(
+//       title: widgetTitle??"",
+//       subtitle: "Subtitle",
+//     );
+//   }
 
 //   Widget example() {
 //     return Example(

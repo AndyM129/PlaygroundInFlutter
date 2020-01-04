@@ -16,23 +16,24 @@ class _ClipPageState extends State<ClipPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title ?? 'Container - Clip')),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 44.0),
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              ExampleHeader(
-                title: "Clip",
-                subtitle: "Flutter中提供了一些剪裁函数，用于对组件进行剪裁。",
-              ),
-              example(),
-              example2(),
-              example3(),
-              example4(),
-              example5(),
-              example6(),
-              // example7(),
-            ],
+      body: Scrollbar(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 44.0),
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                ExampleHeader(
+                  title: "Clip",
+                  subtitle: "Flutter中提供了一些剪裁函数，用于对组件进行剪裁。",
+                ),
+                example(),
+                example2(),
+                example3(),
+                example4(),
+                example5(),
+                example6(),
+              ],
+            ),
           ),
         ),
       ),

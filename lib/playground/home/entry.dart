@@ -16,6 +16,8 @@ import 'package:playground_in_flutter/playground/layout_widget/stack_layout_widg
 import 'package:playground_in_flutter/playground/layout_widget/align_layout_widget/align_layout_widget_page.dart';
 import 'package:playground_in_flutter/playground/container_widget/scaffold_widget/scaffold_widget_page.dart';
 import 'package:playground_in_flutter/playground/container_widget/tabbar_widget/tabbar_widget_page.dart';
+import 'package:playground_in_flutter/playground/container_widget/drawer_widget/drawer_widget_page.dart';
+import 'package:playground_in_flutter/playground/container_widget/clip_widget/clip_page.dart';
 
 /// 实例
 class Entry {
@@ -94,6 +96,14 @@ List<Entry> entries = [
 	Entry(
     title: "Container Widget - TabBar",
 		page: TabBarPage(),
+  ),
+	Entry(
+    title: "Container Widget - Drawer",
+		page: DrawerPage(),
+  ),
+	Entry(
+    title: "Container Widget - Clip",
+		page: ClipPage(),
   ),
   Entry(
     title: "···",

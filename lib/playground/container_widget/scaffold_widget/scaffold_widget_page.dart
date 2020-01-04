@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:playground_in_flutter/common/text_style.dart';
 import 'package:playground_in_flutter/common/example.dart';
+import 'package:playground_in_flutter/playground/container_widget/scaffold_widget/scaffold_widget_page_2.dart';
 
 class ScaffoldPage extends StatefulWidget {
   final String title;
@@ -62,24 +63,18 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
 
   // 导航栏左侧按钮
   Widget appBarLeading() {
-    return Builder(builder: (context) {
-      return IconButton(
-        icon: Icon(Icons.menu, color: Colors.white), //自定义图标
-        onPressed: () {
-          // 打开抽屉菜单
-          Scaffold.of(context).openDrawer();
-        },
-      );
-    });
+    return null;
   }
 
   // 导航栏右侧按钮
   List<Widget> appBarActions() {
     return [
       new IconButton(
-        icon: Icon(Icons.refresh, color: Colors.white),
+        icon: Icon(Icons.arrow_upward, color: Colors.white),
         onPressed: () {
-          print("object");
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return ScaffoldPage2();
+          }));
         },
       ),
     ];

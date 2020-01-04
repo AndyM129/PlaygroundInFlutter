@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playground_in_flutter/common/text_style.dart';
 
 /// 示例容器
 class Example extends Container {
@@ -27,13 +28,34 @@ class Example extends Container {
               ),
           child: Container(
             margin: const EdgeInsets.fromLTRB(0, 0, 0, 5.0),
-            padding: const EdgeInsets.all(0),
+            padding: const EdgeInsets.all(5),
             color: Color(0x10000000),
             child: child,
           ),
         ),
 				Text(title??"", style: _titleTextStyle),
         Text(subtitle??"", style: _subtitleTextStyle),
+        Divider(color: Colors.black),
+        Padding(padding: EdgeInsets.only(top: 20.0)),
+      ],
+    );
+  }
+}
+
+
+/// 示例容器
+class ExampleHeader extends Container {
+  final String title;
+  final String subtitle;
+
+  ExampleHeader({Key key, this.title, this.subtitle}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+				Text(title??"", style: AppTextStyle.titleTextStyle1),
+        Text(subtitle??"", style: AppTextStyle.tipsTextStyle),
         Divider(color: Colors.black),
         Padding(padding: EdgeInsets.only(top: 20.0)),
       ],

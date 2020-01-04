@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:playground_in_flutter/playground/hello_flutter/hello_flutter.dart';
 import 'package:playground_in_flutter/playground/times_counter/times_counter_page.dart';
-import 'package:playground_in_flutter/playground/basic_weight/text/text_page.dart';
-import 'package:playground_in_flutter/playground/basic_weight/button/button_page.dart';
-import 'package:playground_in_flutter/playground/basic_weight/image/image_page.dart';
-import 'package:playground_in_flutter/playground/basic_weight/icon/icon_page.dart';
-import 'package:playground_in_flutter/playground/basic_weight/check_box/check_box_page.dart';
-import 'package:playground_in_flutter/playground/basic_weight/text_field/text_field_page.dart';
-import 'package:playground_in_flutter/playground/basic_weight/form/form_page.dart';
-import 'package:playground_in_flutter/playground/basic_weight/progress_indicator/progress_indicator_page.dart';
+import 'package:playground_in_flutter/playground/basic_widget/text/text_page.dart';
+import 'package:playground_in_flutter/playground/basic_widget/button/button_page.dart';
+import 'package:playground_in_flutter/playground/basic_widget/image/image_page.dart';
+import 'package:playground_in_flutter/playground/basic_widget/icon/icon_page.dart';
+import 'package:playground_in_flutter/playground/basic_widget/check_box/check_box_page.dart';
+import 'package:playground_in_flutter/playground/basic_widget/text_field/text_field_page.dart';
+import 'package:playground_in_flutter/playground/basic_widget/form/form_page.dart';
+import 'package:playground_in_flutter/playground/basic_widget/progress_indicator/progress_indicator_page.dart';
+import 'package:playground_in_flutter/playground/layout_widget/linear_layout_widget/linear_layout_widget_page.dart';
+import 'package:playground_in_flutter/playground/layout_widget/flex_layout_widget/flex_layout_widget_page.dart';
+import 'package:playground_in_flutter/playground/layout_widget/flow_layout_widget/flow_layout_widget_page.dart';
+import 'package:playground_in_flutter/playground/layout_widget/stack_layout_widget/stack_layout_widget_page.dart';
+import 'package:playground_in_flutter/playground/layout_widget/align_layout_widget/align_layout_widget_page.dart';
+import 'package:playground_in_flutter/playground/container_widget/scaffold_widget/scaffold_widget_page.dart';
+import 'package:playground_in_flutter/playground/container_widget/tabbar_widget/tabbar_widget_page.dart';
 
 /// 实例
 class Entry {
@@ -59,6 +66,34 @@ List<Entry> entries = [
 	Entry(
     title: "Basic Widget - ProgressIndicator",
 		page: ProgressIndicatorPage(),
+  ),
+	Entry(
+    title: "Layout Widget - Row、Column",
+		page: LinearLayoutPage(),
+  ),
+	Entry(
+    title: "Layout Widget - Flex、Expanded",
+		page: FlexLayoutPage(),
+  ),
+	Entry(
+    title: "Layout Widget - Wrap、Flow",
+		page: FlowLayoutPage(),
+  ),
+	Entry(
+    title: "Layout Widget - Stack、Positioned",
+		page: StackLayoutPage(),
+  ),
+	Entry(
+    title: "Layout Widget - Align",
+		page: AlignLayoutPage(),
+  ),
+	Entry(
+    title: "Container Widget - Scaffold",
+		page: ScaffoldPage(),
+  ),
+	Entry(
+    title: "Container Widget - TabBar",
+		page: TabBarPage(),
   ),
   Entry(
     title: "···",

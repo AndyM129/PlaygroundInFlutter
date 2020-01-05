@@ -24,12 +24,13 @@ import 'package:playground_in_flutter/playground/scrollable_widget/list_view/lis
 import 'package:playground_in_flutter/playground/scrollable_widget/grid_view/grid_view_page.dart';
 import 'package:playground_in_flutter/playground/scrollable_widget/custom_scroll_view/custom_scroll_view_page.dart';
 import 'package:playground_in_flutter/playground/scrollable_widget/scroll_controller/scroll_controller_page.dart';
-
+import 'package:playground_in_flutter/playground/functional_widget/will_pop_scope/will_pop_scope_example_page.dart';
+import 'package:playground_in_flutter/playground/functional_widget/theme/theme_example_page.dart';
 
 /// 实例
 class Entry {
   final String title;
-	final Widget page;
+  final Widget page;
   // const Entry({this.title});
   Entry({this.title, this.page});
 }
@@ -38,106 +39,113 @@ class Entry {
 List<Entry> entries = [
   Entry(
     title: "Hello Flutter",
-		page: HelloPage(),
+    page: HelloPage(),
   ),
   Entry(
     title: "Times Counter",
-		page: TimesCounterPage(),
+    page: TimesCounterPage(),
   ),
-	Entry(
+  Entry(
     title: "Basic Widget - Text",
-		page: TextPage(),
+    page: TextPage(),
   ),
-	Entry(
+  Entry(
     title: "Basic Widget - Button",
-		page: ButtonPage(),
+    page: ButtonPage(),
   ),
-	Entry(
+  Entry(
     title: "Basic Widget - Image",
-		page: ImagePage(),
+    page: ImagePage(),
   ),
-	Entry(
+  Entry(
     title: "Basic Widget - Icon",
-		page: IconPage(),
+    page: IconPage(),
   ),
-	Entry(
+  Entry(
     title: "Basic Widget - CheckBox",
-		page: CheckBoxPage(),
+    page: CheckBoxPage(),
   ),
-	Entry(
+  Entry(
     title: "Basic Widget - TextField",
-		page: TextFieldPage(),
+    page: TextFieldPage(),
   ),
-	Entry(
+  Entry(
     title: "Basic Widget - Form",
-		page: FormPage(),
+    page: FormPage(),
   ),
-	Entry(
+  Entry(
     title: "Basic Widget - ProgressIndicator",
-		page: ProgressIndicatorPage(),
+    page: ProgressIndicatorPage(),
   ),
-	Entry(
+  Entry(
     title: "Layout Widget - Row、Column",
-		page: LinearLayoutPage(),
+    page: LinearLayoutPage(),
   ),
-	Entry(
+  Entry(
     title: "Layout Widget - Flex、Expanded",
-		page: FlexLayoutPage(),
+    page: FlexLayoutPage(),
   ),
-	Entry(
+  Entry(
     title: "Layout Widget - Wrap、Flow",
-		page: FlowLayoutPage(),
+    page: FlowLayoutPage(),
   ),
-	Entry(
+  Entry(
     title: "Layout Widget - Stack、Positioned",
-		page: StackLayoutPage(),
+    page: StackLayoutPage(),
   ),
-	Entry(
+  Entry(
     title: "Layout Widget - Align",
-		page: AlignLayoutPage(),
+    page: AlignLayoutPage(),
   ),
-	Entry(
+  Entry(
     title: "Container Widget - Scaffold",
-		page: ScaffoldPage(),
+    page: ScaffoldPage(),
   ),
-	Entry(
+  Entry(
     title: "Container Widget - TabBar",
-		page: TabBarPage(),
+    page: TabBarPage(),
   ),
-	Entry(
+  Entry(
     title: "Container Widget - Drawer",
-		page: DrawerPage(),
+    page: DrawerPage(),
   ),
-	Entry(
+  Entry(
     title: "Container Widget - Clip",
-		page: ClipPage(),
+    page: ClipPage(),
   ),
-	Entry(
+  Entry(
     title: "Scrollable Widget - SingleChildScrollView",
-		page: SingleChildScrollViewPage(),
+    page: SingleChildScrollViewPage(),
   ),
-	Entry(
+  Entry(
     title: "Scrollable Widget - ListView",
-		page: ListViewPage(),
+    page: ListViewPage(),
   ),
-	Entry(
+  Entry(
     title: "Scrollable Widget - GridView",
-		page: GridViewPage(),
+    page: GridViewPage(),
   ),
-	Entry(
+  Entry(
     title: "Scrollable Widget - CustomScrollView",
-		page: CustomScrollViewPage(),
+    page: CustomScrollViewPage(),
   ),
-
-	Entry(
+  Entry(
     title: "Scrollable Widget - ScrollController",
-		page: ScrollControllerPage(),
+    page: ScrollControllerPage(),
+  ),
+  Entry(
+    title: "Functional Widget - WillPopScope",
+    page: WillPopScopeExamplePage(),
   ),
 	Entry(
+    title: "Functional Widget - Theme",
+    page: ThemeExamplePage(),
+  ),
+  Entry(
     title: " - - - - - - - - - - - - - - - - - - - ",
   ),
   Entry(
     title: "Example Widget - ExamplePage",
-		page: ExamplePage(),
+    page: ExamplePage(),
   ),
 ];

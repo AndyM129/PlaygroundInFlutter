@@ -72,7 +72,7 @@ class _ExamplePageState extends State<ExamplePage> {
   List<Widget> buildExamples() {
     return <Widget>[
       exampleHeader(),
-      example(),
+      example_1(),
     ];
   }
 
@@ -83,7 +83,7 @@ class _ExamplePageState extends State<ExamplePage> {
     );
   }
 
-  Widget example() {
+  Widget example_1() {
     return Example(
       child: Text("playground"),
       title: "Title",

@@ -8,6 +8,8 @@
 		<a href="https://github.com/AndyM129/PlaygroundInFlutter/issues/new?template=bug_en.md">Report bug</a>
 		·
 		<a href="https://github.com/AndyM129/PlaygroundInFlutter/issues/new?template=feature.md&labels=feature">Request feature</a> 
+		·
+		<a href="README.pdf">README.pdf</a> 
 	</p>
 </p> 
 <br>

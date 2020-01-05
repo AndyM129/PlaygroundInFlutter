@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:playground_in_flutter/common/example_page.dart';
 import 'package:playground_in_flutter/playground/hello_flutter/hello_flutter.dart';
 import 'package:playground_in_flutter/playground/times_counter/times_counter_page.dart';
 import 'package:playground_in_flutter/playground/basic_widget/text/text_page.dart';
@@ -20,6 +21,10 @@ import 'package:playground_in_flutter/playground/container_widget/drawer_widget/
 import 'package:playground_in_flutter/playground/container_widget/clip_widget/clip_page.dart';
 import 'package:playground_in_flutter/playground/scrollable_widget/single_child_scroll_view/single_child_scroll_view_page.dart';
 import 'package:playground_in_flutter/playground/scrollable_widget/list_view/list_view_page.dart';
+import 'package:playground_in_flutter/playground/scrollable_widget/grid_view/grid_view_page.dart';
+import 'package:playground_in_flutter/playground/scrollable_widget/custom_scroll_view/custom_scroll_view_page.dart';
+import 'package:playground_in_flutter/playground/scrollable_widget/scroll_controller/scroll_controller_page.dart';
+
 
 /// 实例
 class Entry {
@@ -115,7 +120,24 @@ List<Entry> entries = [
     title: "Scrollable Widget - ListView",
 		page: ListViewPage(),
   ),
+	Entry(
+    title: "Scrollable Widget - GridView",
+		page: GridViewPage(),
+  ),
+	Entry(
+    title: "Scrollable Widget - CustomScrollView",
+		page: CustomScrollViewPage(),
+  ),
+
+	Entry(
+    title: "Scrollable Widget - ScrollController",
+		page: ScrollControllerPage(),
+  ),
+	Entry(
+    title: " - - - - - - - - - - - - - - - - - - - ",
+  ),
   Entry(
-    title: "···",
+    title: "Example Widget - ExamplePage",
+		page: ExamplePage(),
   ),
 ];

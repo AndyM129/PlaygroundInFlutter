@@ -10,7 +10,7 @@ class Example extends Container {
     color: Colors.black,
     fontSize: 14.0,
   );
-	final TextStyle _subtitleTextStyle = TextStyle(
+  final TextStyle _subtitleTextStyle = TextStyle(
     color: Colors.grey,
     fontSize: 10.0,
   );
@@ -33,15 +33,14 @@ class Example extends Container {
             child: child,
           ),
         ),
-				Text(title??"", style: _titleTextStyle),
-        Text(subtitle??"", style: _subtitleTextStyle),
+        Text(title ?? "", style: _titleTextStyle),
+        Text(subtitle ?? "", style: _subtitleTextStyle),
         Divider(color: Colors.black),
         Padding(padding: EdgeInsets.only(top: 20.0)),
       ],
     );
   }
 }
-
 
 /// 示例容器
 class ExampleHeader extends Container {
@@ -54,73 +53,11 @@ class ExampleHeader extends Container {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-				Text(title??"", style: AppTextStyle.titleTextStyle1),
-        Text(subtitle??"", style: AppTextStyle.tipsTextStyle),
+        Text(title ?? "", style: AppTextStyle.titleTextStyle1),
+        Text(subtitle ?? "", style: AppTextStyle.tipsTextStyle),
         Divider(color: Colors.black),
         Padding(padding: EdgeInsets.only(top: 20.0)),
       ],
     );
   }
 }
-
-
-
-
-// import 'package:flutter/material.dart';
-// import 'package:playground_in_flutter/common/text_style.dart';
-// import 'package:playground_in_flutter/common/example.dart';
-
-// class WidgetExamplePage extends StatefulWidget {
-//   final String title;
-//   WidgetExamplePage({Key key, this.title}) : super(key: key);
-
-//   @override
-//   _WidgetExamplePageState createState() => _WidgetExamplePageState();
-// }
-
-// class _WidgetExamplePageState extends State<WidgetExamplePage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: Text(widget.title ?? appBarDefaultTitle())),
-//       body: Scrollbar(
-//         child: SingleChildScrollView(
-//           padding: EdgeInsets.fromLTRB(15.0, 15.0, 15.0, 44.0),
-//           child: Column(
-//             children: <Widget>[
-//               exampleHeader(),
-//               example(),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-
-//   ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 	final String chapterTitle = "Widget";
-//   final String widgetTitle = "WidgetExample";
-
-// 	String appBarDefaultTitle() {
-// 		return "${chapterTitle??""}${chapterTitle==null?"":" - "}${widgetTitle??""}";
-// 	}
-
-//   Widget exampleHeader() {
-//     return ExampleHeader(
-//       title: widgetTitle??"",
-//       subtitle: "Subtitle",
-//     );
-//   }
-
-//   Widget example() {
-//     return Example(
-//       child: Text("playground"),
-//       title: "Title",
-//       subtitle: "Subtitle",
-//     );
-//   }
-
-//   ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// }

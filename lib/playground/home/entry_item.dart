@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playground_in_flutter/playground/home/entry.dart';
-import 'package:playground_in_flutter/playground/error/error_page.dart';
+import 'package:playground_in_flutter/common/error_page.dart';
 
 /// 实例显示行
 class EntryItem extends StatelessWidget {
